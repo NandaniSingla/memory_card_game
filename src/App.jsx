@@ -55,8 +55,11 @@ const App = () => {
   };
 
   return (
-    <div className="game-board">
-      {cards.map((_, index) => renderCard(index))}
+    <div>
+      <h1 style={{ textDecoration: 'underline' }}>Memory Game</h1>
+      <div className="game-board">
+        {cards.map((_, index) => renderCard(index))}
+      </div>
     </div>
   );
 };
